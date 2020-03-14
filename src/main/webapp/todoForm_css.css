@@ -1,0 +1,44 @@
+body{
+    text-align:center;
+    background-color: bisque;
+    font-size: large;
+    font-family:sans-serif;
+}
+#content{
+    background-color: white;
+    padding:20px;
+}
+#addcontent{
+    margin-bottom: 30px;
+    text-align:left;
+    display:inline-block;
+    width:400px;
+}
+.words{
+    text-align:left;
+    margin-bottom:10px;
+}
+
+input[type="text"]{
+    width:350px;
+    padding:5px;
+}
+#name{
+	width:200px;
+}
+button[type="button"], #reset, #submit{
+    background-color: rgb(247, 163, 60);
+    color:white;
+    padding:5px 15px;
+    border:none;
+    font-size:18px;
+  }
+
+.left{
+    float:left;
+    text-decoration: underline;
+}
+.right{
+    float:right;
+    margin-left:5px;
+}
