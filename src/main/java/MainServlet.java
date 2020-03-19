@@ -26,9 +26,9 @@ public class MainServlet extends HttpServlet {
 		List<TodoDto> doing = new ArrayList<>();
 		List<TodoDto> done = new ArrayList<>();
 
-		todo = dao.getTodos("TODO");
-		doing = dao.getTodos("DOING");
-		done = dao.getTodos("DONE");
+		todo = dao.getListByType("TODO");
+		doing = dao.getListByType("DOING");
+		done = dao.getListByType("DONE");
 
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("/main.jsp");
 		request.setAttribute("todo", todo);

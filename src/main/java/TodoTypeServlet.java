@@ -19,7 +19,7 @@ public class TodoTypeServlet extends HttpServlet {
 			throws ServletException, IOException {
 		long id = Long.parseLong(request.getParameter("id"));
 		TodoDao dao = new TodoDao();
-		TodoDto dto = dao.getTodo(id);
+		TodoDto dto = dao.getOneById(id);
 		dao.updateTodo(id, dto.getType());
 		response.sendRedirect("main");
 	}

@@ -13,12 +13,13 @@ import todo.dto.TodoDto;
 @WebServlet("/addTodo")
 public class TodoAddServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	String encodeType = "utf-8";
 
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		TodoDao dao = new TodoDao();
-		request.setCharacterEncoding("utf-8");
+		request.setCharacterEncoding(encodeType);
 		String name = request.getParameter("name");
 		String title = request.getParameter("title");
 		String sequence = request.getParameter("sequence");
