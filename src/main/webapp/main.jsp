@@ -32,11 +32,10 @@
 				%>
 				<c:forEach items="${todo }" var="item">
 					<tr id="list${item.id }">
-						<td><span class="up">${item.title }</span><br> <span
-							class="sub">등록날짜 : ${item.regDate }, ${item.name }, 우선순위
-								${item.sequence }
-								<button type="button" id="btn${item.id }"
-									onclick="changeType(${item.id})">→</button>
+						<td><span class="up">${item.title }</span><br> 
+						<span class="sub">등록날짜 : ${item.regDate },
+						 ${item.name }, 우선순위${item.sequence }
+						<button type="button" id="btn${item.id }" onclick="changeType(${item.id})">→</button>
 						</span></td>
 					</tr>
 				</c:forEach>
@@ -52,11 +51,10 @@
 				%>
 				<c:forEach items="${doing }" var="item">
 					<tr id="list${item.id }">
-						<td><span class="up">${item.title }</span><br> <span
-							class="sub">등록날짜 : ${item.regDate }, ${item.name }, 우선순위
-								${item.sequence }
-								<button type="button" id="btn${item.id }"
-									onclick="changeType(${item.id})">→</button>
+						<td><span class="up">${item.title }</span><br> 
+						<span class="sub">등록날짜 : ${item.regDate }, ${item.name },
+						우선순위 ${item.sequence }
+						<button type="button" id="btn${item.id }" onclick="changeType(${item.id})">→</button>
 						</span></td>
 					</tr>
 				</c:forEach>
@@ -72,9 +70,9 @@
 				%>
 				<c:forEach items="${done }" var="item">
 					<tr id="list${item.id }">
-						<td><span class="up">${item.title }</span><br> <span
-							class="sub">등록날짜 : ${item.regDate }, ${item.name }, 우선순위
-								${item.sequence }</span></td>
+						<td><span class="up">${item.title }</span><br>
+						 <span class="sub">등록날짜 : ${item.regDate }, 
+						 ${item.name }, 우선순위${item.sequence }</span></td>
 					</tr>
 				</c:forEach>
 			</table>
